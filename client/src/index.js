@@ -12,7 +12,9 @@ const store = createStore(reducers, compose(applyMiddleware(thunk)));
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
+    <Provider store={store}>
+      <Header />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
