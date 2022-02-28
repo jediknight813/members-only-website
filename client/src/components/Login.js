@@ -1,11 +1,11 @@
 import  { useSelector,  useDispatch } from 'react-redux';
 import '../styles/contentStyles.css'
-import { AddUser} from '../actions/users'
+import { LoginUser } from '../actions/users'
 import { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
 
 
-const SignUp = () => {
+const Login = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const [UserSignIn, SetUserSignIn] = useState({"name": '', "password": ''})
@@ -18,14 +18,14 @@ const SignUp = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         //console.log(UserSignIn)
-        dispatch(AddUser(UserSignIn));
+        dispatch(LoginUser(UserSignIn));
         clear()
-        navigate("/Login")
+        navigate("/")
       };
 
     return (
         <div className="sign_in_parent">
-            <h1>Sign Up</h1>
+            <h1>Login</h1>
             <form action="" method="POST" onSubmit={handleSubmit}>
                 <div className='sign_in_input_parent'>
                     <label for="username">Username</label>
@@ -43,5 +43,4 @@ const SignUp = () => {
     )
 }
 
-
-export default SignUp
+export default Login

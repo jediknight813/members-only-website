@@ -1,0 +1,50 @@
+.sign_in_parent {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    height: 30%;
+    width: 350px;
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+}
+
+.sign_in_input_parent {
+    color: white;
+    width: 200px;
+    gap: 20px;
+    height: 20px;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.sign_in_button_parent {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign_in_button_parent button {
+    color: tomato;
+    background-color: white;
+    border: none;
+    width: 90px;
+    font-size: 15px;
+    border-radius: 10px;
+    height: 30px;
+    transition: linear 0.4s;
+    cursor: pointer;
+}
+
+.sign_in_button_parent button:hover {
+    font-size: 16px;
+    width: 92px;
+    height: 32px;
+    transition: linear 0.4s;
+}

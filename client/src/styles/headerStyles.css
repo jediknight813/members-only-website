@@ -30,6 +30,7 @@
     border-radius: 25px;
     border: 4px solid tomato;
     transition: linear 0.4s;
+    cursor: pointer;
 }
 
 .header_banner button:hover {
@@ -37,4 +38,9 @@
     width: 90px;
     height: 35px;
     transition: linear 0.4s;
+}
+
+.input_container {
+    border: none;
+    padding: 5px;
 }
