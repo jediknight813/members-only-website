@@ -87,6 +87,9 @@ app.get('/user', (req, res) => {
     res.send({user: req.user})
 })
 
+//app.get('/', (req, res) => {
+//    res.send('hello from nuntia tabula')
+//})
 
 
 app.post(
