@@ -8,7 +8,7 @@ import reducers from './reducers';
 import Header from './components/Header';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
-
+import Messages from './components/Messages';
 
 import {
   BrowserRouter,
@@ -25,6 +25,7 @@ ReactDOM.render(
         <BrowserRouter>
           <Header />
           <Routes>
+            <Route path="/" element={<Messages />} />
             <Route path="SignUp" element={<SignUp />} />
             <Route path="Login" element={<Login />} />
           </Routes>

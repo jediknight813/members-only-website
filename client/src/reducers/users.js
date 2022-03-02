@@ -8,8 +8,8 @@ export default (users = [], action) => {
         return action.payload;
       case CREATE_USER:
         return [...users, action.payload];
-        case LOGIN_USER:
-          return action.payload;
+      case LOGIN_USER:
+        return [...users, action.payload];
       default:
         return users;
     }
